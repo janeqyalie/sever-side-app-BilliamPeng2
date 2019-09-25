@@ -33,7 +33,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	// Say that when we receive a request for the '/' (or "root") URL
 	// we want the function `indexHandler` to handle it.
-	http.HandleFunc("/", indexHandler)
+	http.HandleFunc("/vast-squid", indexHandler)
 
 	// Start listening for HTTP requests.
 	http.ListenAndServe(":"+getEnv("PORT", "8080"), nil)
